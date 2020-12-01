@@ -1,0 +1,72 @@
+class list<T> (contents: T[], length: int) {
+	self.contents = contents;
+	self.length = length;
+}	{
+	contents: T[];
+	length: int;
+	_index(index: int): T {
+		~ code ~
+	}
+	_slice(start: int, stop: int): list<T> {
+		~ code ~
+	}
+	reverse() {
+		T[] reversed = T[self.length];
+		int current = self.length-1;
+		loop (self.contents): item {
+			reversed[current] = item;
+			current--;
+		}
+		self.contents = reversed;
+	}
+	remove(index: int) {
+		T[] removed = T[self.length-1];
+		int current = 0;
+		loop (self.contents): item {
+			if (current != index) {
+				removed[current] = item;
+			}
+			current++;
+		}
+		self.contents = removed;
+	}
+	append(new_item: T) {
+		T[] appended = T[self.length+1];
+		int current = 0;
+		loop (self.contents): item {
+				appended[current] = item;
+			current++;
+		}
+		appended[current+1] = new_item;
+		self.contents = appended;
+	}
+	sort() {
+		T[] sorted = T[self.length-1];
+		int current = 0;
+		loop (self.contents): T value {
+			~ code ~
+		}
+		self.contents = sorted;
+	}
+}
+
+max(original_list: list<int>): int {
+	int largest = original_list.contents[0];
+	loop (original_list.contents) : int current {
+		if (current > largest) {
+			largest = current;
+		}
+	}
+	return largest;
+}
+
+min(original_list: list<int>): int {
+	int smallest = original_list.contents[0];
+	loop (original_list.contents) : int current {
+		if (current < largest) {
+			largest = current;
+		}
+	}
+	return smallest;
+}
+
