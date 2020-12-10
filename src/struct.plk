@@ -1,0 +1,35 @@
+/
+~ This file contains the outline for the structures
+~
+~ Jake Roggenbuck (jakeroggenbuck2@gmail.com)
+/~
+
+
+class queue<T> (contents: T[]) {
+
+}
+
+
+class priority_queue<T> (contents: T[]) {
+
+}
+
+
+class double_queue<T> (contents: T[]) {
+
+}
+
+
+class stack<T> (contents: T[]) {
+
+}
+
+
+class tree() {
+
+}
+
+
+class binary_tree() {
+
+}
