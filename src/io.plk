@@ -1,0 +1,13 @@
+~/
+~ This file contains input and output functions
+~
+~ Jake Roggenbuck (jakeroggenbuck2@gmail.com)
+/~
+
+nout(output: string): {
+	~ Output ~
+}
+
+nin(input: string): {
+	~ Input ~
+}
