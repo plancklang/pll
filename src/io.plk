@@ -1,0 +1,7 @@
+nout(output: string): {
+	~ Output ~
+}
+
+nin(input: string): {
+	~ Input ~
+}
