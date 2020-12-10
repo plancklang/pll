@@ -1,3 +1,9 @@
+~/
+~ This file contains the list objects class and other list related functions
+~
+~ Jake Roggenbuck (jakeroggenbuck2@gmail.com)
+/~
+
 class list<T> (contents: T[], length: int) {
 	self.contents = contents;
 	self.length = length;
